@@ -2,6 +2,7 @@
 import styled from "styled-components";
 import samuel from "../../assets/Images/sam.svg";
 import Socials from "../../components/Socials";
+import Tools from "../../components/Tools";
 import FeaturedProjects from "./FeaturedProjects";
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
         </div>
       </Hero>
       <FeaturedProjects />
+      <Tools />
     </Container>
   );
 };

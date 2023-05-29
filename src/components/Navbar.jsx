@@ -2,15 +2,23 @@
 import styled from "styled-components";
 import logo from "../assets/Images/logo.svg";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <NavContainer>
       <div className="logo">
-        <img src={logo} alt="logo" />
+        <img
+          src={logo}
+          alt="logo"
+          onClick={() => {
+            navigate("/");
+          }}
+        />
       </div>
       <div className="links">
-        <Link to="">About</Link>
+        <Link to="/about">About</Link>
         <Link to="">My Resume</Link>
         <Link to="">Contact me</Link>
       </div>
@@ -26,6 +34,7 @@ const NavContainer = styled.nav`
   padding: 30px;
   .logo {
     img {
+      cursor: pointer;
       width: 150px;
       height: 150px;
     }
