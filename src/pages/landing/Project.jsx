@@ -3,7 +3,7 @@ import styled from "styled-components";
 import yellowcard from "../../assets/Images/yellowcard.svg";
 import Button from "../../components/Button";
 
-const Project = ({ img, name, link, details, btnText, availability }) => {
+const Project = ({ img, name, link, details, btnText, availability, path }) => {
   return (
     <Container>
       <div className="imageWrapper">
@@ -26,7 +26,7 @@ const Project = ({ img, name, link, details, btnText, availability }) => {
           •<span>{availability}</span>
         </p>
         <div className="buttonWrapper">
-          <Button name={btnText} path="/" fontSize={10} />
+          <Button name={btnText} path={path} fontSize={10} />
         </div>
       </div>
     </Container>

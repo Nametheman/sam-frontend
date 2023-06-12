@@ -16,4 +16,7 @@ const LinkButton = styled(Link)`
   font-family: "gilroyregular", sans-serif;
   border-radius: 8px;
   /* font-size: 22px; */
+
 `;
+
+

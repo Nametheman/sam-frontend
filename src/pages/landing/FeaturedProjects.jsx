@@ -17,6 +17,7 @@ const FeaturedProjects = () => {
       btnText: "Read more",
       availability: "",
       img: yellowcard,
+      path: "/projects/yellow-card",
     },
     {
       name: "PayMyBills",
@@ -27,6 +28,7 @@ const FeaturedProjects = () => {
       btnText: "Read Case Study",
       availability: "Bot & Available on Web",
       img: pmb,
+      path: "/projects/pmb",
     },
     {
       name: " Adashi Esusu Akawo",
@@ -36,6 +38,7 @@ const FeaturedProjects = () => {
       btnText: "Read Case Study",
       availability: "Available on Web and Mobile",
       img: adashi,
+      path: "/projects/adashi",
     },
     {
       name: "Other UI/UX Projects ",
@@ -45,6 +48,7 @@ const FeaturedProjects = () => {
       btnText: "Read Case Study",
       availability: "Available on Web and Mobile",
       img: others,
+      path: "/projects/other-projects",
     },
   ];
   return (
@@ -52,7 +56,8 @@ const FeaturedProjects = () => {
       <h3>Featured Projects</h3>
       <hr />
       {projects.map((project, idx) => {
-        const { name, link, details, btnText, availability, img } = project;
+        const { name, link, details, btnText, availability, img, path } =
+          project;
         return (
           <div key={idx}>
             <Project
@@ -62,6 +67,7 @@ const FeaturedProjects = () => {
               btnText={btnText}
               availability={availability}
               img={img}
+              path={path}
             />
           </div>
         );
